@@ -1,0 +1,90 @@
+header {
+    /* take up the entire vertical space of the viewport. */
+    height: 100vh;
+    /* 7rem between content and top edge */
+    padding-top: 7rem;
+    /* hide content that overflows the boundary */
+    overflow: hidden;
+}
+
+.header__container {
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+
+/* ================= RESUME =================== */
+.resume {
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: center;
+    /* space between elements */
+    gap: 1.2rem;
+}
+
+/* ================= HEADRER SOCIAL ================= */
+.header__socials {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* space between elements */
+    gap: 0.8rem;
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
+}
+
+.header__socials::after {
+    content: '';
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
+}
+
+/* ================= ME ================= */
+.me {
+    background: linear-gradient(var(--color-imgbg), transparent);
+    width: 22rem;
+    height: 30rem;
+    position: absolute;
+    left: calc(50% - 11rem);
+    margin-top: 4rem;
+    border-radius: 12rem 12rem 0 0;
+    overflow: hidden;
+    padding: 5rem 1.5rem 1.5rem 1.5rem;
+}
+
+/* ================= SCROLL DOWN ================= */
+.scroll__down {
+    position: absolute;
+    right: -2.3rem;
+    bottom: 8rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 1rem;
+}
+/* ============ MEDIA QUERIES (MEDIUM DEVICE) ============*/
+@media screen and (max-width: 1024px){
+
+}
+
+/* ============ MEDIA QUERIES (SMALL DEVICE) ============*/
+@media screen and (max-width: 600px){
+    header {
+        height: 100vh;
+        padding-top: 4rem;
+    }
+    .resume {
+        margin-top: 2.5rem;
+        display: flex;
+        justify-content: center;
+        /* space between elements */
+        gap: 1.2rem;
+    }
+    .header__socials,
+    .scroll__down{
+        display: none;
+    }
+}
