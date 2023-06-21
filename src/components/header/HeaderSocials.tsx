@@ -6,8 +6,8 @@ import {AiFillWechat} from 'react-icons/ai'
 const HeaderSocials = () => {
   return (
     <div className='header__socials'> 
-      <a href='https://linkedin.com' target='_blank'><AiFillLinkedin size="2rem"/></a>
-      <a href='https://github.com' target='_blank'><AiFillGithub size="2rem"/></a>
+      <a href='https://www.linkedin.com/in/xieyuning' target='_blank'><AiFillLinkedin size="2rem"/></a>
+      <a href='https://github.com/xiexixixi' target='_blank'><AiFillGithub size="2rem"/></a>
       <a href='#wechat' target='_blank'><AiFillWechat size="2rem"/></a>
     </div>
   )
