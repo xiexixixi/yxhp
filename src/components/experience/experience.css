@@ -8,7 +8,6 @@
     grid-column: span 2;
 }
 .experience__merge > .experience__content {
-    grid-column: span 2;
     grid-template-columns: repeat(5, 1fr);
 }
 
@@ -28,14 +27,14 @@
 
 .experience__container > div > h3 {
     text-align: center;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
     color: var(--color-primary);
 }
 
 .experience__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 1rem;
+    gap: 1rem;
 }
 
 /* ============ MEDIA QUERIES (MEDIUM DEVICE) ============*/
@@ -43,9 +42,46 @@
     .experience__container{
         grid-template-columns: 1fr;
     }
+    .experience__merge {
+        grid-column: span 1;
+    }
     .experience__container > div {
         width: 80%;
         padding: 2rem;
         margin: 0 auto;
+    }
+
+    .experience__merge {
+        grid-column: span 1;
+    }
+    .experience__merge > .experience__content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+/* ============ MEDIA QUERIES (SMALL DEVICE) ============*/
+@media screen and (max-width: 600px){
+    .experience__container{
+        grid-template-columns: 1fr;
+    }
+    .experience__merge {
+        grid-column: span 1;
+    }
+    .experience__container > div {
+        width: 50%;
+        padding: 2rem;
+        margin: 0 auto;
+    }
+    .experience__content {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 1rem;
+    }
+
+    .experience__merge {
+        grid-column: span 1;
+    }
+    .experience__merge > .experience__content {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
