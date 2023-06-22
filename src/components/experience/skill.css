@@ -1,0 +1,21 @@
+.skilldetail {
+    display: flex;
+    gap: 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid rgb(116, 177, 218);
+    margin: 0rem 0.5rem;
+    padding: 1rem;
+}
+
+.skilldetail:hover {
+    background:var(--color-bg-variant);
+}
+
+.skilldetail__icon {
+    margin-top: 0.4rem;
+    color: var(--color-primary);
+}
+
+.skilldetail__text h5 {
+    color: var(--color-light);
+}
