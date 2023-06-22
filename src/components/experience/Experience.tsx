@@ -1,8 +1,7 @@
-import React, {CSSProperties} from 'react'
+import React from 'react'
 import './experience.css'
 
 import Skill from './Skill'
-import {AiFillCheckCircle} from 'react-icons/ai'
 
 
 export enum Proficiency {
