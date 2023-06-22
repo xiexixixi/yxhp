@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/yxhp/static/css/main.1d423031.css",
-    "main.js": "/yxhp/static/js/main.041cae87.js",
+    "main.css": "/yxhp/static/css/main.0cd2bcf6.css",
+    "main.js": "/yxhp/static/js/main.5a64a86f.js",
     "static/js/787.2227d92e.chunk.js": "/yxhp/static/js/787.2227d92e.chunk.js",
     "static/media/me.png": "/yxhp/static/media/me.317a4d98778c19db93f7.png",
     "static/media/Resume_May_30_one_page.pdf": "/yxhp/static/media/Resume_May_30_one_page.a75ade4faa1bb291b356.pdf",
     "static/media/pok.png": "/yxhp/static/media/pok.3f027a6bcd078b118301.png",
     "index.html": "/yxhp/index.html",
-    "main.1d423031.css.map": "/yxhp/static/css/main.1d423031.css.map",
-    "main.041cae87.js.map": "/yxhp/static/js/main.041cae87.js.map",
+    "main.0cd2bcf6.css.map": "/yxhp/static/css/main.0cd2bcf6.css.map",
+    "main.5a64a86f.js.map": "/yxhp/static/js/main.5a64a86f.js.map",
     "787.2227d92e.chunk.js.map": "/yxhp/static/js/787.2227d92e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1d423031.css",
-    "static/js/main.041cae87.js"
+    "static/css/main.0cd2bcf6.css",
+    "static/js/main.5a64a86f.js"
   ]
 }
