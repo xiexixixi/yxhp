@@ -4,6 +4,14 @@
     gap: 2rem;
     
 }
+.experience__merge {
+    grid-column: span 2;
+}
+.experience__merge > .experience__content {
+    grid-column: span 2;
+    grid-template-columns: repeat(5, 1fr);
+}
+
 .experience__container > div {
     background: var(--color-bg-variant);
     padding:2.4rem 4rem;
