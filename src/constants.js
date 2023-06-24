@@ -8,6 +8,7 @@ export const YIN = {
     '--color-white': '#fff',
     '--color-light': 'rgba(241, 234, 234, 0.6)',
     '--color-imgbg': '#49a793',
+    '--color-border': 'rgb(116, 177, 218)'
 }
 
 export const YANG = {
@@ -18,4 +19,5 @@ export const YANG = {
     '--color-white': '#333',
     '--color-light': 'rgba(128, 128, 128, 0.6)',
     '--color-imgbg': '#ffd8b5',
+    '--color-border': 'rgb(227, 124, 65)',
 }

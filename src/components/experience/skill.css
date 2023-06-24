@@ -2,7 +2,7 @@
     display: flex;
     gap: 1.5rem;
     border-radius: 1rem;
-    border: 1px solid rgb(116, 177, 218);
+    border: 1px solid var(--color-border);
     /* margin: 0rem 0.5rem; */
     padding: 0.5rem 1rem;
 }
