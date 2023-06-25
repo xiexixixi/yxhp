@@ -4,7 +4,7 @@ import Resume from './Resume'
 import HeaderSocials from './HeaderSocials'
 import me from '../../assets/me.png'
 
-const Header = () => {
+const Header = (props:any) => {
   return (
     <header>
       <HeaderSocials/>

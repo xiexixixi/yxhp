@@ -1,21 +1,24 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useContext } from 'react'
+import { ThemeContext, ThemeContextType } from '../../contexts/ThemeContextProvider'
 import './nav.css'
 import { YIN, YANG } from '../../constants'
 import {AiOutlineHome, AiOutlineUser, AiOutlineBook} from 'react-icons/ai'
 import {BiMessageSquareDetail} from 'react-icons/bi'
 import {RiServiceLine} from 'react-icons/ri'
 import {FaYinYang} from 'react-icons/fa'
+import { ThemeStyle } from '../../themestyle'
 
 
-
-const Nav = () => {
-  const [activeNav, setActiveNav] = useState('#')
-  const [theme, setTheme] = useState(YIN)
+const Nav = (props:any) => {
+  const [activeNav, setActiveNav] = useState<string>('#')
+  const [theme, setTheme] = useState<ThemeStyle>(YIN)
+  const themecontext = useContext(ThemeContext)
 
   useEffect(()=>{
     Object.entries(theme).forEach(([property, value]) => {
       document.documentElement.style.setProperty(property, value);
     });
+    themecontext.setTheme(theme)
   }, [theme])
 
   return (
