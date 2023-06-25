@@ -17,7 +17,7 @@ function App() {
     <div className="App___">
       <ThemeContextProvider>
         <>
-        <Header />
+        <Header/>
         <Nav/>
         <About/>
         <Experience/>
