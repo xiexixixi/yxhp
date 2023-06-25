@@ -1,5 +1,6 @@
 // export const RESUME_URL = '/src/assets/Resume_May_30_one_page.pdf'
 
+
 export const YIN = {
     '--color-bg': '#1b1b38',
     '--color-bg-variant': '#2c2c6c',
