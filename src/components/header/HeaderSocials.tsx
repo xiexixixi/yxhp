@@ -20,12 +20,16 @@ const HeaderSocials = () => {
       thumbnailRef.current.style.display = 'none';
     }
   };
+  const handleIconClick = () => {
+    navigator.clipboard.writeText('WhateverU_Say').then(()=>alert('wechat id has been copied to clipboard'));
+    // alert('wechat id has been copied to clip board');
+  };
   return (
     <div className='header__socials'> 
       <div><img ref={thumbnailRef} className='wxqr' src={WXQRBlue} alt="wxqrcode_blue"/></div>
       <a href='https://www.linkedin.com/in/xieyuning' target='_blank' rel="noreferrer"><AiFillLinkedin size="2rem"/></a>
       <a href='https://github.com/xiexixixi' target='_blank' rel="noreferrer"><AiFillGithub size="2rem"/></a>
-      <a onMouseEnter={handleIconHover} onMouseLeave={handleIconLeave}><AiFillWechat size="2rem"/></a>
+      <a onClick={handleIconClick} onMouseEnter={handleIconHover} onMouseLeave={handleIconLeave}><AiFillWechat size="2rem"/></a>
     </div>
   )
 }
