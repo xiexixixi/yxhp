@@ -1,6 +1,6 @@
 import React from "react";
 import './about.css';
-import ME from '../../assets/pok.png'
+import ME from '../../assets/mesenior.jpg'
 import {BsBriefcase} from 'react-icons/bs'
 import {FaLaptopCode} from 'react-icons/fa'
 import {BiNotepad} from 'react-icons/bi'
