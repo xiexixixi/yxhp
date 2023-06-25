@@ -10,7 +10,7 @@ nav {
     transform: translateX(-50%);
     bottom: 2rem;
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     border-radius: 2.2rem;
     backdrop-filter: blur(10px);
 }

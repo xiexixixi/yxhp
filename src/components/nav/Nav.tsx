@@ -9,7 +9,6 @@ import {FaYinYang} from 'react-icons/fa'
 
 
 const Nav = () => {
-
   const [activeNav, setActiveNav] = useState('#')
   const [theme, setTheme] = useState(YIN)
 
