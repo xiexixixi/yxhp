@@ -5,14 +5,14 @@ import { YIN, YANG } from '../../constants'
 import {AiOutlineHome, AiOutlineUser, AiOutlineBook} from 'react-icons/ai'
 import {BiMessageSquareDetail} from 'react-icons/bi'
 import {RiServiceLine} from 'react-icons/ri'
-import {FaYinYang} from 'react-icons/fa'
-import { ThemeStyle } from '../../themestyle'
+import {FaYinYang} from 'react-icons/fa';
+import { ThemeStyle } from '../../themestyle';
 
 
 const Nav = (props:any) => {
-  const [activeNav, setActiveNav] = useState<string>('#')
-  const [theme, setTheme] = useState<ThemeStyle>(YIN)
-  const themecontext = useContext(ThemeContext)
+  const [activeNav, setActiveNav] = useState<string>('#');
+  const [theme, setTheme] = useState<ThemeStyle>(YIN);
+  const themecontext = useContext(ThemeContext);
 
   useEffect(()=>{
     Object.entries(theme).forEach(([property, value]) => {
