@@ -68,7 +68,7 @@ const HeaderSocials = () => {
 
   return (
     <Socials isfixed={String(isFixed)}> 
-      <div><img ref={thumbnailRef} className='wxqr' alt="wxqrcode_blue"/></div>
+      <div><WXQR ref={thumbnailRef} alt="wxqrcode"/></div>
       <a href='https://www.linkedin.com/in/xieyuning' target='_blank' rel="noreferrer"><AiFillLinkedin size="2rem"/></a>
       <a href='https://github.com/xiexixixi' target='_blank' rel="noreferrer"><AiFillGithub size="2rem"/></a>
       <a onClick={handleIconClick} onMouseEnter={handleIconHover} onMouseLeave={handleIconLeave}><AiFillWechat size="2rem"/></a>
@@ -103,8 +103,19 @@ const Socials = styled.div<IsFixed>`
     background: var(--color-primary);
   }
 
-  @media screen and (max-width: 600px){
+  @media screen and (max-width: 800px){
     display: none;
   }
+`
+
+const WXQR = styled.img`
+  display: none;
+  position: absolute;
+  width: 700%;
+  height: auto;
+  border-radius: 2rem;
+  /* right: 2rem; */
+  margin-left: 2rem;
+  z-index: 3;
 `
 export default HeaderSocials
