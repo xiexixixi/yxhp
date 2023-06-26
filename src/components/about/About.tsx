@@ -1,9 +1,9 @@
 import React from "react";
 import './about.css';
 import ME from '../../assets/mesenior.jpg'
-import {BsBriefcase} from 'react-icons/bs'
-import {FaLaptopCode} from 'react-icons/fa'
-import {BiNotepad} from 'react-icons/bi'
+import { BsBriefcase } from 'react-icons/bs'
+import { FaLaptopCode } from 'react-icons/fa'
+import { BiNotepad } from 'react-icons/bi'
 const About = () => {
     return (
         <section id='about'>
@@ -16,17 +16,17 @@ const About = () => {
                 <div className="about__content">
                     <div className="about__cards">
                         <article className="about__card">
-                            <BsBriefcase className='about_icon'/>
+                            <BsBriefcase className='about_icon' />
                             <h5>Experience</h5>
                             <small>1 year working experience</small>
                         </article>
                         <article className="about__card">
-                            <BiNotepad className='about_icon'/>
+                            <BiNotepad className='about_icon' />
                             <h5>Notes</h5>
                             <small>Learn until the final breath</small>
                         </article>
                         <article className="about__card">
-                            <FaLaptopCode className='about_icon'/>
+                            <FaLaptopCode className='about_icon' />
                             <h5>Project</h5>
                             <small>1 year working</small>
                         </article>

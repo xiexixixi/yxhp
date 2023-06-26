@@ -1,12 +1,11 @@
 import React, { useContext, useEffect, useRef, useState } from 'react'
-import './headersocials.css'
 import WXQRBlue from '../../assets/wxqr_blue.png'
 import WXQROrange from '../../assets/wxqr_orange.png'
 
 
-import {AiFillLinkedin} from 'react-icons/ai'
-import {AiFillGithub} from 'react-icons/ai'
-import {AiFillWechat} from 'react-icons/ai'
+import { AiFillLinkedin } from 'react-icons/ai'
+import { AiFillGithub } from 'react-icons/ai'
+import { AiFillWechat } from 'react-icons/ai'
 import { ThemeContext } from '../../contexts/ThemeContextProvider'
 import { YIN } from '../../themestyle'
 import { styled } from 'styled-components'
@@ -28,9 +27,9 @@ const HeaderSocials = () => {
       // Calculate the distance from the bottom of the page
       const distanceFromBottom = document.documentElement.scrollHeight - (window.innerHeight + scrollPos);
       // Check if close to the bottom
-      if (distanceFromBottom > scrollThreshold) 
+      if (distanceFromBottom > scrollThreshold)
         setIsFixed(true);
-      else 
+      else
         setIsFixed(false);
 
       setPrevScrollPos(scrollPos);
@@ -49,7 +48,7 @@ const HeaderSocials = () => {
   const handleIconHover = () => {
     if (thumbnailRef.current) {
       thumbnailRef.current.style.display = 'block';
-      if(themecontext.theme['--color-bg'] === YIN['--color-bg'])
+      if (themecontext.theme['--color-bg'] === YIN['--color-bg'])
         thumbnailRef.current.src = WXQRBlue;
       else
         thumbnailRef.current.src = WXQROrange;
@@ -62,16 +61,16 @@ const HeaderSocials = () => {
     }
   };
   const handleIconClick = () => {
-    navigator.clipboard.writeText('WhateverU_Say').then(()=>alert('wechat id has been copied to clipboard'));
+    navigator.clipboard.writeText('WhateverU_Say').then(() => alert('wechat id has been copied to clipboard'));
     // alert('wechat id has been copied to clip board');
   };
 
   return (
-    <Socials isfixed={String(isFixed)}> 
-      <div><WXQR ref={thumbnailRef} alt="wxqrcode"/></div>
-      <a href='https://www.linkedin.com/in/xieyuning' target='_blank' rel="noreferrer"><AiFillLinkedin size="2rem"/></a>
-      <a href='https://github.com/xiexixixi' target='_blank' rel="noreferrer"><AiFillGithub size="2rem"/></a>
-      <a onClick={handleIconClick} onMouseEnter={handleIconHover} onMouseLeave={handleIconLeave}><AiFillWechat size="2rem"/></a>
+    <Socials isfixed={String(isFixed)}>
+      <div><WXQR ref={thumbnailRef} alt="wxqrcode_blue" /></div>
+      <a href='https://www.linkedin.com/in/xieyuning' target='_blank' rel="noreferrer"><AiFillLinkedin size="2rem" /></a>
+      <a href='https://github.com/xiexixixi' target='_blank' rel="noreferrer"><AiFillGithub size="2rem" /></a>
+      <a onClick={handleIconClick} onMouseEnter={handleIconHover} onMouseLeave={handleIconLeave}><AiFillWechat size="2rem" /></a>
     </Socials>
   )
 }
@@ -80,7 +79,7 @@ interface IsFixed {
 }
 const Socials = styled.div<IsFixed>`
   margin-top: 2.5rem;
-  position: ${props=>props.isfixed==='true'?'fixed': 'absolute'};
+  position: ${props => props.isfixed === 'true' ? 'fixed' : 'absolute'};
   display: flex;
   flex-direction: column;
   align-items: center;
