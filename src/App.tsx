@@ -5,7 +5,7 @@ import './App.css';
 import ThemeContextProvider from './contexts/ThemeContextProvider';
 import Nav from './components/nav/Nav';
 import About from './components/about/About';
-import Experience from './components/experience/Experience';
+import Skills from './components/experience/Skills';
 import Services from './components/Services/Services';
 import Portfolio from './components/portfolio/Portfolio';
 import Testimonials from './components/testimonials/Testimonials';
@@ -20,7 +20,7 @@ function App() {
         <Header/>
         <Nav/>
         <About/>
-        <Experience/>
+        <Skills/>
         <Services/>
         <Portfolio/>
         <Testimonials/>

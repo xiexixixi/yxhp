@@ -1,7 +1,7 @@
 import React from 'react'
 import './skill.css'
 import { AiFillCheckCircle } from 'react-icons/ai'
-import { SkillDetail, Proficiency } from './Experience'
+import { SkillDetail, Proficiency } from './Skills'
 
 import { FaBookReader } from 'react-icons/fa'
 
