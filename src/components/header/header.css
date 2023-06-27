@@ -47,17 +47,17 @@ header {
     font-weight: 300;
     font-size: 1rem;
 }
-/* ============ MEDIA QUERIES (MEDIUM DEVICE) ============*/
-@media screen and (max-width: 1024px){
 
-}
+/* ============ MEDIA QUERIES (MEDIUM DEVICE) ============*/
+@media screen and (max-width: 1024px) {}
 
 /* ============ MEDIA QUERIES (SMALL DEVICE) ============*/
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
     header {
         height: 100vh;
         padding-top: 4rem;
     }
+
     .resume {
         margin-top: 2.5rem;
         display: flex;
@@ -65,7 +65,8 @@ header {
         /* space between elements */
         gap: 1.2rem;
     }
-    .scroll__down{
+
+    .scroll__down {
         display: none;
     }
 }

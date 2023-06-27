@@ -1,7 +1,7 @@
 import React from 'react'
-import './experience.css'
+import './skills.css'
 
-import Skill from './Skill'
+import SkillItem from './SkillItem'
 
 
 export enum Proficiency {
@@ -44,7 +44,7 @@ const skills: SkillDetail[] = [
   { name: "AWS", proficiency: Proficiency.Experienced, category: Category.Other },
   { name: "Azure", proficiency: Proficiency.Intermediate, category: Category.Other },
   { name: "Linux", proficiency: Proficiency.Experienced, category: Category.Other },
-  // {name: "Nginx", proficiency:Proficiency.Intermediate, category:Category.Other},
+  {name: "Nginx", proficiency:Proficiency.Learning, category:Category.Other},
   { name: "Jenkins", proficiency: Proficiency.Intermediate, category: Category.Other },
 ]
 const Skills = () => {
@@ -58,7 +58,7 @@ const Skills = () => {
           <div className="experience__content">
             {skills.map((sk, index) => (
               sk.category === Category.Frontend ?
-                <Skill key={index} name={sk.name} proficiency={sk.proficiency} category={Category.Frontend} /> : null
+                <SkillItem key={index} name={sk.name} proficiency={sk.proficiency} category={Category.Frontend} /> : null
             ))}
           </div>
         </div>
@@ -69,7 +69,7 @@ const Skills = () => {
 
             {skills.map((sk, index) => (
               sk.category === Category.Backend ?
-                <Skill key={index} name={sk.name} proficiency={sk.proficiency} category={Category.Frontend} /> : null
+                <SkillItem key={index} name={sk.name} proficiency={sk.proficiency} category={Category.Frontend} /> : null
             ))}
           </div>
         </div>
@@ -79,7 +79,7 @@ const Skills = () => {
           <div className="experience__content">
             {skills.map((sk, index) => (
               sk.category === Category.Other ?
-                <Skill key={index} name={sk.name} proficiency={sk.proficiency} category={Category.Frontend} /> : null
+                <SkillItem key={index} name={sk.name} proficiency={sk.proficiency} category={Category.Frontend} /> : null
             ))}
           </div>
         </div>
