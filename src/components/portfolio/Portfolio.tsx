@@ -1,17 +1,18 @@
 import React from 'react'
 import { styled } from 'styled-components'
 import pok from '../../assets/pok.png'
+import view from '../../assets/morraine-lake.jpg'
 
 import PortfolioProject from './PortfolioProject'
 
 
 export interface ProjectDetail {
-  picture: string,
+  picture?: string,
   title: string,
   description: string,
   skills: string[],
-  demoLink: string,
-  sourceLink: string
+  demoLink?: string,
+  sourceLink?: string
 }
 const projects:ProjectDetail[] = [
   {
@@ -24,12 +25,20 @@ const projects:ProjectDetail[] = [
   },
   
   {
-    picture: pok,
+    picture: view,
     title: 'TapNews', 
     description: 'A web app that displays news collected from various news sources', 
-    skills:['React','Flask','MongoDB', 'Redis', 'RabbitMQ '],
+    skills:['React','Flask','MongoDB', 'Redis', 'RabbitMQ'],
     demoLink: 'https://www.youtube.com/watch?v=9Jdp9YM9IIk',
     sourceLink: 'https://github.com/darlingof02/295p-team1-tapnews-main',
+  },
+
+  {
+    picture: view,
+    title: 'Sports Process Analysis ', 
+    description: 'An automatic highlight editor for tennis matches', 
+    skills:['PyTorch','OpenSMILE ','OpenCV'],
+    sourceLink: 'https://github.com/xiexixixi/Sports_process_analysis',
   },
 
 ]
