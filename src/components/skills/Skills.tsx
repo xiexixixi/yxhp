@@ -49,7 +49,7 @@ const skills: SkillDetail[] = [
 ]
 const Skills = () => {
   return (
-    <section id='experience'>
+    <section id='skills'>
       {/* <h5>What Skills I Have</h5> */}
       <h2>My Skills</h2>
       <div className="container experience__container">
