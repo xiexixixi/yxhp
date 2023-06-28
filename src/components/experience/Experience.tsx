@@ -13,7 +13,7 @@ const Experience: React.FC = () => {
     setIsChecked(!isChecked);
   };
   return (
-    <section id='experience'>
+    <section style={{minHeight: '100vh'}} id='experience'>
       <h2>My Experience & Education</h2>
       <ToggleSwitch>
         <input
