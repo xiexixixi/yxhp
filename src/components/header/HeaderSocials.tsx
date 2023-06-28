@@ -62,7 +62,7 @@ const HeaderSocials = () => {
   };
   const handleIconClick = () => {
     navigator.clipboard.writeText('WhateverU_Say').then(() => alert('wechat id has been copied to clipboard'));
-    // alert('wechat id has been copied to clip board');
+    // alert('Wechat ID has been copied to clip board');
   };
 
   return (

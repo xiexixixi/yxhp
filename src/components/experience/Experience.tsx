@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 // import './toggleswitch.css'
 import { styled } from 'styled-components';
+import Timeline from './timeline/Timeline';
 
 
 
@@ -32,8 +33,9 @@ const Experience: React.FC = () => {
           checked={!isChecked}
           onChange={handleToggle}
         />
-        <label htmlFor="radio-two">Educaton</label>
+        <label htmlFor="radio-two">Education</label>
       </ToggleSwitch>
+      <Timeline/>
       
 
     </section>
