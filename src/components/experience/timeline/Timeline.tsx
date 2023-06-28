@@ -9,12 +9,12 @@ const TimelineWrapper = styled.div`
     display: flex;
     justify-content: center;
 
-    @media screen and (max-width: 1024px) {
+    /* @media screen and (max-width: 1024px) {
         width: var(--container-width-md);
     }
     @media screen and (max-width: 600px) {
         width: var(--container-width-sm);
-    }
+    } */
 `
 
 const Timeline:React.FC = () => {
