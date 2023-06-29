@@ -11,7 +11,7 @@ export enum Proficiency {
   Experienced = 'Proficient',
   Expert = 'Expert',
 }
-enum Category {
+export enum Category {
   Frontend = "Frontend",
   Backend = "Backend",
   Other = "Library&DevTools",

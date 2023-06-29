@@ -35,7 +35,7 @@ const Experience: React.FC = () => {
         />
         <label htmlFor="radio-two">Education</label>
       </ToggleSwitch>
-      <Timeline/>
+      <Timeline isEducation = {isChecked}/>
       
 
     </section>

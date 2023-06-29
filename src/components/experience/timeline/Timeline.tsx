@@ -1,7 +1,7 @@
 import React from 'react'
 import './timeline.css'
 import { styled } from 'styled-components'
-import TimelineItem from './TimelineItem'
+import TimelineItem, { EducationTimelineItem, ExperienceTimelineItem } from './TimelineItem'
 
 const TimelineWrapper = styled.div`
     width: var(--container-width-lg);
@@ -16,13 +16,19 @@ const TimelineWrapper = styled.div`
         width: var(--container-width-sm);
     } */
 `
+interface TimelineType {
+    isEducation: boolean;
+}
 
-const Timeline:React.FC = () => {
+
+const Timeline:React.FC<TimelineType> = (props) => {
   return (
     <TimelineWrapper >
         <ul className="timeline timeline-centered">
-            <TimelineItem/>
-            <TimelineItem/>
+            {props.isEducation? 
+                <><ExperienceTimelineItem/><ExperienceTimelineItem/></>:
+                <><EducationTimelineItem/><EducationTimelineItem/></>
+            }
         </ul>
     </TimelineWrapper>
   )
