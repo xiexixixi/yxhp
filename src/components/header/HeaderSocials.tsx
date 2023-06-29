@@ -66,7 +66,7 @@ const HeaderSocials = () => {
   };
 
   return (
-    <Socials isfixed={String(isFixed)}>
+    <Socials $isfixed={String(isFixed)}>
       <div><WXQR ref={thumbnailRef} alt="wxqrcode_blue" /></div>
       <a href='https://www.linkedin.com/in/xieyuning' target='_blank' rel="noreferrer"><AiFillLinkedin size="2rem" /></a>
       <a href='https://github.com/xiexixixi' target='_blank' rel="noreferrer"><AiFillGithub size="2rem" /></a>
@@ -75,11 +75,11 @@ const HeaderSocials = () => {
   )
 }
 interface IsFixed {
-  isfixed: string
+  $isfixed: string
 }
 const Socials = styled.div<IsFixed>`
   margin-top: 2.5rem;
-  position: ${props => props.isfixed === 'true' ? 'fixed' : 'absolute'};
+  position: ${props => props.$isfixed === 'true' ? 'fixed' : 'absolute'};
   display: flex;
   flex-direction: column;
   align-items: center;

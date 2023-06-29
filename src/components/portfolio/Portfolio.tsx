@@ -50,7 +50,7 @@ const Portfolio:React.FC = () => {
       <h2>Portfolio</h2>
 
       <PortfoiloContainer className='container'>
-        {projects.map((pd) => <PortfolioProject {...pd}/>)}
+        {projects.map((pd,idx) => <PortfolioProject key={idx} {...pd}/>)}
       </PortfoiloContainer>
     
     </section>

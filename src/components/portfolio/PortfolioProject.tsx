@@ -46,8 +46,8 @@ const PortfolioProject:React.FC<ProjectDetail> = (props) =>{
         <h3 style={{marginTop: '1rem', textAlign: 'center'}}>{props.title}</h3>
         <h5 style={{margin: '0 2rem 1rem 2rem', color: 'var(--color-light)'}}>{"  "+props.description}</h5>
         <ButtonContainer display={props.demoLink==null || ''?String('none'):String('')}>
-            <a href={props.demoLink} className='btn demo__link' target='_blank' rel="noopener">Demo</a>
-            <a href={props.sourceLink} className='btn source__link' target='_blank' rel="noopener">Github</a>
+            <a href={props.demoLink} className='btn demo__link' target='_blank' rel="noreferrer">Demo</a>
+            <a href={props.sourceLink} className='btn source__link' target='_blank' rel="noreferrer">Github</a>
         </ButtonContainer>
     </Project>
   )
