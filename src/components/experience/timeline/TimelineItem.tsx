@@ -1,5 +1,6 @@
 import React from 'react'
 import './timeline.css'
+import { EducationDetail, ExperienceDetail } from './Timeline'
 // Configured DNS and CDN using Cloudflare to optimize website performance and enhance global accessibility
 // Deployed and managed a website on Azure virtual machines, utilizing load balancers to ensure high availability
 // Bolstered website security by installing an SSL certificate, transitioning the site to HTTPs for secure data transmission
@@ -26,37 +27,35 @@ const TimelineItem:React.FC = () => {
 }
 
 
-export const EducationTimelineItem:React.FC = () => {
+export const EducationTimelineItem:React.FC<EducationDetail> = (props) => {
   return (
-    <li key={1} className="timeline-item">
+    <li className="timeline-item">
         <div className="timeline-info">
-            <span>April 02, 2016 - April 03, 2016</span>
+          <span>{props.startDate} - {props.endDate}</span>
         </div>
         <div className="timeline-marker"></div>
         <article className="timeline-content">
-            <h3 className="timeline-title">Dalian University of Technology</h3>
+            <h3 className="timeline-title">{props.school}</h3>
             <h4>Dalian, China</h4>
-            <h4>GPA: 3.84</h4>
-            <h4>Course</h4>
-            <p>C/C++, Python </p>
+            <h4>GPA: 3.84 {props.ranking==null?'': props.ranking }</h4>
+            <p>Courses: {props.courses} </p>
         </article>
     </li>
   )
 }
 
-export const ExperienceTimelineItem:React.FC = () => {
+export const ExperienceTimelineItem:React.FC<ExperienceDetail> = (props) => {
   return (
     <li key={1} className="timeline-item">
         <div className="timeline-info">
-            <span>April 02, 2016 - April 03, 2016</span>
+            <span>{props.startDate} - {props.endDate}</span>
         </div>
         <div className="timeline-marker"></div>
         <article className="timeline-content">
-            <h3 className="timeline-title">Software Development Engineer</h3>
-            <h4>Neusoft</h4>
+            <h3 className="timeline-title">{props.title}</h3>
+            <h4>{props.employer} @ {props.location}</h4>
             <h4>Skills</h4>
-            <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis
-                eu pede mollis pretium. Pellentesque ut neque. </p>
+            <p>{String(props.skills)}</p>
         </article>
     </li>
   )

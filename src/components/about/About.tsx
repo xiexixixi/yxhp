@@ -34,7 +34,7 @@ const About = () => {
                     <p>
                         Hello world, Hello worldHello worldHello worldHello worldHello worldHello world
                     </p>
-                    <a href="#contact" className="btn btn-primary">Let's talk</a>
+                    {/* <a href="#contact" className="btn btn-primary">Let's talk</a> */}
                 </div>
             </div>
         </section>

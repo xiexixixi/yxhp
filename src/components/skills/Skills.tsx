@@ -13,6 +13,7 @@ export enum Proficiency {
 }
 export enum Category {
   Frontend = "Frontend",
+  Language = "Language",
   Backend = "Backend",
   Other = "Library&DevTools",
 }
@@ -24,10 +25,17 @@ export interface SkillDetail {
 // Spring Boot, Spring Cloud, Spring Data JPA, Redis, WebSocket, Kafka, JUnit
 //  MySQL, MongoDB, Git, Docker, AWS, Azure, Linux, Nginx, Jenkins
 const skills: SkillDetail[] = [
+  { name: "Java", proficiency: Proficiency.Experienced, category: Category.Language },
+  { name: "Python", proficiency: Proficiency.Intermediate, category: Category.Language },
+  { name: "JavaScript", proficiency: Proficiency.Experienced, category: Category.Language },
+  { name: "C/C++", proficiency: Proficiency.Intermediate, category: Category.Language },
+  { name: "PHP", proficiency: Proficiency.Basic, category: Category.Language },
+
+
   { name: "HTML", proficiency: Proficiency.Intermediate, category: Category.Frontend },
   { name: "CSS", proficiency: Proficiency.Intermediate, category: Category.Frontend },
-  { name: "JavaScript", proficiency: Proficiency.Intermediate, category: Category.Frontend },
-  { name: "TypeScript", proficiency: Proficiency.Intermediate, category: Category.Frontend },
+  { name: "JavaScript", proficiency: Proficiency.Experienced, category: Category.Frontend },
+  { name: "TypeScript", proficiency: Proficiency.Experienced, category: Category.Frontend },
   { name: "React", proficiency: Proficiency.Intermediate, category: Category.Frontend },
 
   { name: "Spring Boot", proficiency: Proficiency.Experienced, category: Category.Backend },
@@ -44,8 +52,11 @@ const skills: SkillDetail[] = [
   { name: "AWS", proficiency: Proficiency.Experienced, category: Category.Other },
   { name: "Azure", proficiency: Proficiency.Intermediate, category: Category.Other },
   { name: "Linux", proficiency: Proficiency.Experienced, category: Category.Other },
-  {name: "Nginx", proficiency:Proficiency.Learning, category:Category.Other},
+  { name: "Nginx", proficiency: Proficiency.Learning, category: Category.Other },
   { name: "Jenkins", proficiency: Proficiency.Intermediate, category: Category.Other },
+  { name: "Numpy", proficiency: Proficiency.Intermediate, category: Category.Other },
+  { name: "Pandas", proficiency: Proficiency.Intermediate, category: Category.Other },
+  { name: "PyTorch", proficiency: Proficiency.Intermediate, category: Category.Other },
 ]
 const Skills = () => {
   return (
@@ -53,6 +64,17 @@ const Skills = () => {
       {/* <h5>What Skills I Have</h5> */}
       <h2>My Skills</h2>
       <div className="container experience__container">
+
+        <div className="experience__language experience__merge">
+          <h3>Languages</h3>
+          <div className="experience__content">
+            {skills.map((sk, index) => (
+              sk.category === Category.Language ?
+                <SkillItem key={index} name={sk.name} proficiency={sk.proficiency} category={Category.Frontend} /> : null
+            ))}
+          </div>
+        </div>
+
         <div className="experience__frontend">
           <h3>Frontend Development</h3>
           <div className="experience__content">
@@ -83,6 +105,7 @@ const Skills = () => {
             ))}
           </div>
         </div>
+
 
       </div>
     </section>
