@@ -9,8 +9,8 @@ const SkillItem: React.FC<SkillDetail> = (props) => {
   return (
     <SkillDetailComponent>
       {props.proficiency === Proficiency.Learning ?
-        <SkillDetailIcon_FaBookReader className='skilldetail__icon' /> :
-        <SkillDetailIcon_FaBookReader as = {AiFillCheckCircle} className='skilldetail__icon' />}
+        <SkillDetailIconFaBookReader className='skilldetail__icon' /> :
+        <SkillDetailIconFaBookReader as = {AiFillCheckCircle} className='skilldetail__icon' />}
 
       <div className='skilldetail__text'>
         <h3>{props.name}</h3>
@@ -34,7 +34,7 @@ const SkillDetailComponent = styled.div`
     background:var(--color-bg-variant);
   }
 `
-const SkillDetailIcon_FaBookReader = styled(FaBookReader)`
+const SkillDetailIconFaBookReader = styled(FaBookReader)`
   margin-top: 0.4rem;
   color: var(--color-primary);
 `

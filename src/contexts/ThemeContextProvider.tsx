@@ -1,5 +1,5 @@
-import React, { Children, ReactElement, createContext, useState } from "react";
-import { ThemeStyle, YIN, YANG } from "../themestyle";
+import React, { ReactElement, createContext, useState } from "react";
+import { ThemeStyle, YIN } from "../themestyle";
 
 export interface ThemeContextType {
     theme: ThemeStyle,

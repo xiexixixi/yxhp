@@ -73,21 +73,6 @@ const FooterSocial = styled.div`
     }
   }
 `
-const FooterSocialIconWrapper = styled.a`
-  margin-top: 2rem;
-  width: 3rem;
-  height: 3rem;
-  background: var(--color-bg);
-  color: var(--color-white);
-  /* padding: 0.8rem; */
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 0.7rem;
-  border: 1px solid transparent;
-`
-
 const Permalinks = styled.ul`
   display: flex;
   flex-wrap: wrap;

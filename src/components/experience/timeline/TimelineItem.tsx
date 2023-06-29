@@ -1,6 +1,5 @@
 import React from 'react'
 import './timeline.css'
-import { styled } from 'styled-components'
 
 const TimelineItem:React.FC = () => {
   return (
