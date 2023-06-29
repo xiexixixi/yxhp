@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useContext } from 'react'
 import { ThemeContext, ThemeContextType } from '../../contexts/ThemeContextProvider'
 import './nav.css'
-import { YIN, YANG } from '../../constants'
+import { YIN, YANG } from '../../themestyle'
 import { AiOutlineHome, AiOutlineUser, AiOutlineBook } from 'react-icons/ai'
 import { BiMessageSquareDetail } from 'react-icons/bi'
 import { RiServiceLine } from 'react-icons/ri'

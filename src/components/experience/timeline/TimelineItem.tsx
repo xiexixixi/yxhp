@@ -1,7 +1,5 @@
 import React from 'react'
 import './timeline.css'
-import SkillItem from '../../skills/SkillItem'
-import { Category, Proficiency } from '../../skills/Skills'
 // Configured DNS and CDN using Cloudflare to optimize website performance and enhance global accessibility
 // Deployed and managed a website on Azure virtual machines, utilizing load balancers to ensure high availability
 // Bolstered website security by installing an SSL certificate, transitioning the site to HTTPs for secure data transmission
@@ -39,9 +37,8 @@ export const EducationTimelineItem:React.FC = () => {
             <h3 className="timeline-title">Dalian University of Technology</h3>
             <h4>Dalian, China</h4>
             <h4>GPA: 3.84</h4>
-            <h4>Course: C/C++, Python</h4>
-            <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis
-                eu pede mollis pretium. Pellentesque ut neque. </p>
+            <h4>Course</h4>
+            <p>C/C++, Python </p>
         </article>
     </li>
   )
@@ -57,7 +54,7 @@ export const ExperienceTimelineItem:React.FC = () => {
         <article className="timeline-content">
             <h3 className="timeline-title">Software Development Engineer</h3>
             <h4>Neusoft</h4>
-            <h4>Skills: </h4>
+            <h4>Skills</h4>
             <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis
                 eu pede mollis pretium. Pellentesque ut neque. </p>
         </article>

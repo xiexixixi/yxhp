@@ -7,6 +7,7 @@ export interface ThemeStyle {
     '--color-light': string,
     '--color-imgbg': string,
     '--color-border': string,
+    '--color-secondary': string,
 }
 export const YIN:ThemeStyle = {
     '--color-bg': '#1b1b38',
@@ -16,7 +17,8 @@ export const YIN:ThemeStyle = {
     '--color-white': '#fff',
     '--color-light': 'rgba(241, 234, 234, 0.6)',
     '--color-imgbg': '#49a793',
-    '--color-border': 'rgb(116, 177, 218)'
+    '--color-border': 'rgb(116, 177, 218)',
+    '--color-secondary': '#4d20be',
 }
 export const YANG:ThemeStyle = {
     '--color-bg': 'white',
@@ -26,5 +28,6 @@ export const YANG:ThemeStyle = {
     '--color-white': '#333',
     '--color-light': 'rgba(128, 128, 128, 0.6)',
     '--color-imgbg': '#ffd8b5',
-    '--color-border': 'rgb(227, 124, 65)',
+    '--color-border': 'rgb(214, 87, 12)',
+    '--color-secondary': '#fff703',
 }
