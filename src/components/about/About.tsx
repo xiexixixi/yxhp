@@ -15,11 +15,13 @@ const About = () => {
                 </div>
                 <div className="about__content">
                     <div className="about__cards">
+                        <a href="#experience" >
                         <article className="about__card">
                             <BsBriefcase className='about_icon' />
                             <h5>Experience</h5>
                             <small>1 year working experience</small>
                         </article>
+                        </a>
                         <article className="about__card">
                             <BiNotepad className='about_icon' />
                             <h5>Notes</h5>

@@ -1,6 +1,7 @@
 import React from 'react'
 import './timeline.css'
 import { EducationDetail, ExperienceDetail } from './Timeline'
+import { styled } from 'styled-components'
 // Configured DNS and CDN using Cloudflare to optimize website performance and enhance global accessibility
 // Deployed and managed a website on Azure virtual machines, utilizing load balancers to ensure high availability
 // Bolstered website security by installing an SSL certificate, transitioning the site to HTTPs for secure data transmission
@@ -26,6 +27,20 @@ const TimelineItem:React.FC = () => {
   )
 }
 
+const getRandomColor = (): string => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+interface color {
+  color: string;
+}
+const ItemTag = styled.span<color>`
+  text-align: center;
+  
+  /* height: 1.5rem; */
+  display: inline-block;
+  margin: 0.1rem 0.2rem;
+  padding: 0.3rem 1rem;
+  background-color: ${props => props.color};
+  border-radius: 1rem;
+`
 
 export const EducationTimelineItem:React.FC<EducationDetail> = (props) => {
   return (
@@ -36,9 +51,17 @@ export const EducationTimelineItem:React.FC<EducationDetail> = (props) => {
         <div className="timeline-marker"></div>
         <article className="timeline-content">
             <h3 className="timeline-title">{props.school}</h3>
-            <h4>Dalian, China</h4>
-            <h4>GPA: 3.84 {props.ranking==null?'': props.ranking }</h4>
-            <p>Courses: {props.courses} </p>
+            <h4 className='timeline-location'>Dalian, China
+            <br/>
+            GPA: {props.GPA}&nbsp;&nbsp;&nbsp;&nbsp;{props.ranking==null?'': 'Ranking: '+ props.ranking }
+            </h4>
+            {/* <h4 className='timeline-location'>GPA: 3.84&nbsp;&nbsp;&nbsp;&nbsp;{props.ranking==null?'': 'Ranking: '+ props.ranking }</h4> */}
+            
+            <p>Courses: {props.courses?.map((c)=>{
+              const color = 'var(--color-primary-variant)'
+              return <ItemTag color={color}>{c}</ItemTag>
+            })
+            } </p>
         </article>
     </li>
   )
@@ -53,13 +76,17 @@ export const ExperienceTimelineItem:React.FC<ExperienceDetail> = (props) => {
         <div className="timeline-marker"></div>
         <article className="timeline-content">
             <h3 className="timeline-title">{props.title}</h3>
-            <h4>{props.employer} @ {props.location}</h4>
-            <h4>Skills</h4>
-            <p>{String(props.skills)}</p>
+            <h4 className='timeline-location'>{props.employer} @ {props.location}</h4>
+            <p><span>Skills</span>: {props.skills?.map((s)=>{
+              const color = 'var(--color-primary-variant)'
+              return <ItemTag color={color}>{s}</ItemTag>
+            })
+            } </p>
         </article>
     </li>
   )
 }
+
 
 
 

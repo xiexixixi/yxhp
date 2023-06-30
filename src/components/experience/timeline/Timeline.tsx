@@ -37,7 +37,7 @@ export interface EducationDetail {
     GPA: number,
     ranking?: string,
     degree: string,
-    courses: string[],
+    courses?: string[],
     transcript?: string,
 }
 
@@ -89,7 +89,13 @@ const educationList: EducationDetail[] = [
         GPA: 3.84,
         ranking: "10/31",
         degree: 'B.S. in Computer Science and Technology',
-        courses: [''],
+        courses: ['Data Structures and Algorithms', 
+            'Machine Learning & Pattern Recognition', 
+            'Operations Research', 
+            'Data Management & Database System', 
+            'Computer Composition Principle', 
+            'Object-oriented Programming',
+            'Computer Network'],
     }, 
 ]
 
