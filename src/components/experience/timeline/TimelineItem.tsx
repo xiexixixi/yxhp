@@ -40,6 +40,11 @@ const ItemTag = styled.span<color>`
   padding: 0.3rem 1rem;
   background-color: ${props => props.color};
   border-radius: 1rem;
+
+  &:hover {
+    scale: 1.1;
+    transition: var(--transition);
+  }
 `
 
 export const EducationTimelineItem:React.FC<EducationDetail> = (props) => {

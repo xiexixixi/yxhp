@@ -18,7 +18,8 @@ const Project = styled.div`
     }
 `
 const ProjectImage = styled.img`
-    height: 30vh;
+
+    height: 25vh;
     border-radius: 1rem 1rem 0rem 0rem;
     overflow: hidden;
 `

@@ -9,9 +9,9 @@ const Header = (props: any) => {
     <header>
       <HeaderSocials />
       <div className="container header__container">
-        <h5>Hello I'm</h5>
+        <h2>Hello there! My name is</h2>
         <h1>Yuning Xie</h1>
-        <h5 className="text-light">Fullstack Developer</h5>
+        <h5 className="text-light">I'm a Fullstack Developer</h5>
         <Resume />
         <div className="me">
           <img src={me} alt="me"></img>

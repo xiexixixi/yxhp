@@ -1,6 +1,8 @@
 import React from 'react'
 import { styled } from 'styled-components'
 import billshare from '../../assets/billsharedemo.png'
+import tapnews from '../../assets/tapnews.png'
+
 import view from '../../assets/morraine-lake.jpg'
 
 import PortfolioProject from './PortfolioProject'
@@ -25,7 +27,7 @@ const projects:ProjectDetail[] = [
   },
   
   {
-    picture: view,
+    picture: tapnews,
     title: 'TapNews', 
     description: 'A web app that displays news collected from various news sources', 
     skills:['React','Flask','MongoDB', 'Redis', 'RabbitMQ'],

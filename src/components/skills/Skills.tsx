@@ -52,11 +52,11 @@ const skills: SkillDetail[] = [
   { name: "AWS", proficiency: Proficiency.Experienced, category: Category.Other },
   { name: "Azure", proficiency: Proficiency.Intermediate, category: Category.Other },
   { name: "Linux", proficiency: Proficiency.Experienced, category: Category.Other },
-  { name: "Nginx", proficiency: Proficiency.Learning, category: Category.Other },
   { name: "Jenkins", proficiency: Proficiency.Intermediate, category: Category.Other },
   { name: "Numpy", proficiency: Proficiency.Intermediate, category: Category.Other },
   { name: "Pandas", proficiency: Proficiency.Intermediate, category: Category.Other },
   { name: "PyTorch", proficiency: Proficiency.Intermediate, category: Category.Other },
+  { name: "K8s", proficiency: Proficiency.Learning, category: Category.Other },
 ]
 const Skills = () => {
   return (
