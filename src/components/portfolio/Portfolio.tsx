@@ -1,6 +1,6 @@
 import React from 'react'
 import { styled } from 'styled-components'
-import pok from '../../assets/pok.png'
+import billshare from '../../assets/billsharedemo.png'
 import view from '../../assets/morraine-lake.jpg'
 
 import PortfolioProject from './PortfolioProject'
@@ -16,7 +16,7 @@ export interface ProjectDetail {
 }
 const projects:ProjectDetail[] = [
   {
-    picture: pok,
+    picture: billshare,
     title: 'BillShare', 
     description: 'A mobile app to manage shared bills with friends', 
     skills:['React Typescript','Spring Boot','Spring Data JPA', 'MySQL', 'WebSocket', 'Redis', 'AWS'],

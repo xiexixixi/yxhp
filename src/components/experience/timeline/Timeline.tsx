@@ -79,7 +79,7 @@ const educationList: EducationDetail[] = [
         location: 'Irvine, CA',
         GPA: 3.83,
         degree: 'Master of Computer Science',
-        courses: [''],
+        courses: ['COMPUTER SECURITY','OPERATING SYSTEMS','PARL DIST COMP PROF', 'MACH LRN & DATA MIN', 'ADV PROG PROB SOLV','COMP SYS ARCHITECT'],
     }, 
     {
         startDate: 'September 2017',
@@ -87,7 +87,7 @@ const educationList: EducationDetail[] = [
         school: 'Dalian University of Technology (DUT)',
         location: 'Dalian, China',
         GPA: 3.84,
-        ranking: "10/31",
+        ranking: "10/131",
         degree: 'B.S. in Computer Science and Technology',
         courses: ['Data Structures and Algorithms', 
             'Machine Learning & Pattern Recognition', 
