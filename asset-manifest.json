@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/yxhp/static/css/main.15f8a16c.css",
-    "main.js": "/yxhp/static/js/main.aa2833d6.js",
+    "main.js": "/yxhp/static/js/main.ecb98a2c.js",
     "static/js/787.2227d92e.chunk.js": "/yxhp/static/js/787.2227d92e.chunk.js",
     "static/media/mesenior.jpg": "/yxhp/static/media/mesenior.33f811e5531790cba770.jpg",
     "static/media/billsharedemo.png": "/yxhp/static/media/billsharedemo.0bcd8ad0ddefac45263d.png",
@@ -12,11 +12,11 @@
     "static/media/morraine-lake.jpg": "/yxhp/static/media/morraine-lake.abbd6496dc1754e8cd62.jpg",
     "index.html": "/yxhp/index.html",
     "main.15f8a16c.css.map": "/yxhp/static/css/main.15f8a16c.css.map",
-    "main.aa2833d6.js.map": "/yxhp/static/js/main.aa2833d6.js.map",
+    "main.ecb98a2c.js.map": "/yxhp/static/js/main.ecb98a2c.js.map",
     "787.2227d92e.chunk.js.map": "/yxhp/static/js/787.2227d92e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.15f8a16c.css",
-    "static/js/main.aa2833d6.js"
+    "static/js/main.ecb98a2c.js"
   ]
 }
