@@ -37,8 +37,7 @@ const About = () => {
                     I recently graduated with a Master's degree in Computer Science, specializing in full stack development. With a strong foundation in various technologies and a passion for problem-solving, I am eager to make a meaningful impact in the world.
                     </p>
                     <p>
-                    My ultimate dream is to become a software architect, leveraging my diverse background and expertise. From conducting AI research in natural language processing, I have delved into various domains. Additionally, I possess a solid understanding of full-stack development, including front-end, back-end, and DevOps practices. Continuously expanding my knowledge in system design and software architecture, I aspire to become a problem solver and leader in the field.
-                    </p>
+                    My ultimate dream is to become a software architect, leveraging my strong background in software development. With significant experience in software development, including full-stack expertise in front-end, back-end, and DevOps practices, I have established a solid foundation in the field. In addition to my software experience, I have also conducted AI research in natural language processing, exploring cutting-edge techniques and frameworks like PyTorch. Continuously expanding my knowledge in system design and software architecture, I aspire to become a problem solver and leader in the industry.                    </p>
                     {/* <a href="#contact" className="btn btn-primary">Let's talk</a> */}
                 </div>
             </div>

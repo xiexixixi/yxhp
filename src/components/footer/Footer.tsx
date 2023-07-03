@@ -16,13 +16,14 @@ const Footer = () => {
         <li><a href='#portfolio'>Portfolio</a></li>
         <li><a href='#contact'>Contact</a></li>
       </Permalinks>
+      
       <FooterSocial>
-        <a href='https://facebook.com'><AiFillFacebook size="1.5rem" /></a>
-        <a href='https://instagram.com'><AiFillInstagram size="1.5rem" /></a>
-        <a href='https://twitter.com'><AiOutlineTwitter size="1.5rem" /></a>
+        <a href='https://www.facebook.com/yuning.xie.568'><AiFillFacebook size="1.5rem" /></a>
+        <a href='https://www.instagram.com/xieyn12345/'><AiFillInstagram size="1.5rem" /></a>
+        {/* <a href='https://twitter.com'><AiOutlineTwitter size="1.5rem" /></a> */}
       </FooterSocial>
       <CopyRight className="footer__copyright">
-        <small>&copy; 4Celery. All right reserved</small>
+        <small>&copy; YX. All right reserved</small>
       </CopyRight>
 
     </FooterWrapper>

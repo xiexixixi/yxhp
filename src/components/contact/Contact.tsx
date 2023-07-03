@@ -4,7 +4,7 @@ import './contact.css';
 const Contact = () => {
     return (
         <section id = "contact">
-            <button>hello</button>
+            {/* <button>hello</button> */}
         </section>
     )
 }
