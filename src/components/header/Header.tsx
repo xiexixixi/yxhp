@@ -2,7 +2,7 @@ import React from 'react'
 import './header.css'
 import Resume from './Resume'
 import HeaderSocials from './HeaderSocials'
-import me from '../../assets/me.png'
+import me from '../../assets/mefreshman.jpg'
 
 const Header = (props: any) => {
   return (
@@ -15,6 +15,7 @@ const Header = (props: any) => {
         <Resume />
         <div className="me">
           <img src={me} alt="me"></img>
+          {/* <div>Ugly Picture Can't show</div> */}
         </div>
         <a href="#contact" className="scroll__down">Scroll Down</a>
       </div>
