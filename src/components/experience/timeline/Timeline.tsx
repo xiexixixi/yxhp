@@ -43,9 +43,18 @@ export interface EducationDetail {
 
 const experienceList: ExperienceDetail[] = [
     {
-        startDate: 'March 2023',
+        startDate: 'July 2023',
         endDate: 'Present',
-        title: 'Software Development Manager',
+        title: 'Software Development Engineer',
+        employer: 'IEJL',
+        type: 'full-time',
+        location: 'Newport Beach, CA',
+        skills: ['TypeScript', 'React','KeyCloak', 'OpenLayers'],
+    }, 
+    {
+        startDate: 'March 2023',
+        endDate: 'June 2023',
+        title: 'Software Development Engineer',
         employer: 'IEJL',
         type: 'full-time',
         location: 'Newport Beach, CA',
