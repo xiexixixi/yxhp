@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/yxhp/static/css/main.eeda2dd9.css",
-    "main.js": "/yxhp/static/js/main.2b15d722.js",
+    "main.css": "/yxhp/static/css/main.dc816cc4.css",
+    "main.js": "/yxhp/static/js/main.32f333bd.js",
     "static/js/787.2227d92e.chunk.js": "/yxhp/static/js/787.2227d92e.chunk.js",
     "static/media/mesenior.jpg": "/yxhp/static/media/mesenior.33f811e5531790cba770.jpg",
+    "static/media/mefreshman.jpg": "/yxhp/static/media/mefreshman.bc560eea89dfcc10e58c.jpg",
     "static/media/tapnews.png": "/yxhp/static/media/tapnews.350c3a91140003bf0faa.png",
     "static/media/billsharedemo.png": "/yxhp/static/media/billsharedemo.0bcd8ad0ddefac45263d.png",
     "static/media/wxqr_blue.png": "/yxhp/static/media/wxqr_blue.9cc9ac42f9992ef050f8.png",
     "static/media/wxqr_orange.png": "/yxhp/static/media/wxqr_orange.1cf90a8137d8b6f1ad02.png",
-    "static/media/me.png": "/yxhp/static/media/me.317a4d98778c19db93f7.png",
     "static/media/Resume_May_30_one_page.pdf": "/yxhp/static/media/Resume_May_30_one_page.a75ade4faa1bb291b356.pdf",
     "static/media/morraine-lake.jpg": "/yxhp/static/media/morraine-lake.abbd6496dc1754e8cd62.jpg",
     "index.html": "/yxhp/index.html",
-    "main.eeda2dd9.css.map": "/yxhp/static/css/main.eeda2dd9.css.map",
-    "main.2b15d722.js.map": "/yxhp/static/js/main.2b15d722.js.map",
+    "main.dc816cc4.css.map": "/yxhp/static/css/main.dc816cc4.css.map",
+    "main.32f333bd.js.map": "/yxhp/static/js/main.32f333bd.js.map",
     "787.2227d92e.chunk.js.map": "/yxhp/static/js/787.2227d92e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.eeda2dd9.css",
-    "static/js/main.2b15d722.js"
+    "static/css/main.dc816cc4.css",
+    "static/js/main.32f333bd.js"
   ]
 }
