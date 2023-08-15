@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/yxhp/static/css/main.dc816cc4.css",
-    "main.js": "/yxhp/static/js/main.32f333bd.js",
+    "main.js": "/yxhp/static/js/main.0bcbdd83.js",
     "static/js/787.2227d92e.chunk.js": "/yxhp/static/js/787.2227d92e.chunk.js",
     "static/media/mesenior.jpg": "/yxhp/static/media/mesenior.33f811e5531790cba770.jpg",
     "static/media/mefreshman.jpg": "/yxhp/static/media/mefreshman.bc560eea89dfcc10e58c.jpg",
+    "static/media/GAILL.png": "/yxhp/static/media/GAILL.285c078025748aac6641.png",
     "static/media/tapnews.png": "/yxhp/static/media/tapnews.350c3a91140003bf0faa.png",
     "static/media/billsharedemo.png": "/yxhp/static/media/billsharedemo.0bcd8ad0ddefac45263d.png",
     "static/media/wxqr_blue.png": "/yxhp/static/media/wxqr_blue.9cc9ac42f9992ef050f8.png",
@@ -13,11 +14,11 @@
     "static/media/morraine-lake.jpg": "/yxhp/static/media/morraine-lake.abbd6496dc1754e8cd62.jpg",
     "index.html": "/yxhp/index.html",
     "main.dc816cc4.css.map": "/yxhp/static/css/main.dc816cc4.css.map",
-    "main.32f333bd.js.map": "/yxhp/static/js/main.32f333bd.js.map",
+    "main.0bcbdd83.js.map": "/yxhp/static/js/main.0bcbdd83.js.map",
     "787.2227d92e.chunk.js.map": "/yxhp/static/js/787.2227d92e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dc816cc4.css",
-    "static/js/main.32f333bd.js"
+    "static/js/main.0bcbdd83.js"
   ]
 }
